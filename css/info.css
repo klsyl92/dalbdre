@@ -1,0 +1,187 @@
+* {box-sizing: border-box;}
+#wrap{
+    min-width: 320px; width: 100%; margin: auto;
+    background-color: #FEC43F;
+}
+button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+header{width: 100%; height: 100%;}
+header h1{
+    font-size: 40px; font-weight: 700; 
+    letter-spacing: -2px; text-align: center;
+    padding-top: 30px;
+}
+header .more{
+    /*position: relative;width: 57px; height: 55px;*/
+    position: relative; bottom: 48px; left: 14px;
+}
+header .more img{
+    /*position: absolute; left: 14px; bottom: 6px; width: 57px; height: 55px;*/
+}
+header nav{
+    /*display: none;*/
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+header nav ul{
+    width: 80%; height: 100%;
+    background-color: #FFF4DA;
+}
+header nav ul li{
+    width: 100%; height: 47px; 
+    padding: 10px 22px;
+}
+header nav ul li.tit{padding-bottom: 150px;}
+header nav ul li.tit a{font-size: 35px;}
+header nav ul li a{
+    color: #5F3926; font-size: 24px;
+    padding: 10px; font-weight: 700;
+}
+header nav ul li a span{margin-right: 10px; font-size: 15px; vertical-align: middle;}
+header nav ul li a img{position: relative; right: 10px; top: 15px;}
+header nav .closeBtn1{
+    position: relative; left: 240px; bottom: 798px; 
+    width: 50px; height: 50;
+    background-color: #fff; border-radius: 10px; 
+    padding: 5px; z-index: 20;
+}
+header nav .closeBtn1 img{display: block;}
+header .closeBtn2{
+    /*position: relative;*/
+    position: relative; bottom: 55px; left: 246px;
+}
+header .closeBtn2 img{
+    /*position: absolute; left: 320px; bottom: 193px;*/   
+}
+section{width: 100%; height: 100%;}
+section .profile{
+    width: 325px; height: 348px; 
+    background-color: #fff; 
+    margin: auto; margin-top: -20px;
+}
+section .profile img{display: block; margin: auto; padding-top: 96px;}
+section .profile img:last-of-type{
+    padding: 0;
+    position: relative; left: 100px; bottom: 330px;
+}
+section h3{
+    font-size: 20px; color: #fff; font-weight: bold;
+    margin-top: 11px; margin-left: 30px;
+    float: left;
+}
+section .login_out{}
+section .login_out h3{color: #2D2C2C; margin-left: 100px;}
+
+
+/* button */
+input {
+  height: 40px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+.toggle-wrapper {
+  flex: 1 1 calc(100% / 3);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  right: 10px; bottom: 28px;
+}
+
+.toggle-wrapper :before, .toggle-wrapper :after {
+  content: '';
+  position: absolute;
+}
+.toggle {
+  position: relative;
+  display: inline-block;
+}
+label.toggle-item {
+  width: 48px;
+  background: #2e394d;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50px;
+  margin: 40px;
+  position: relative;
+  transition: all .3s ease;
+  transform-origin: 20% center;
+  cursor: pointer;
+}
+label.toggle-item:before {
+  display: block;
+  transition: all .2s ease;
+  width: 2.3em;
+  height: 2.3em;
+  top: -1px;
+  left: -1px;
+  border-radius: 2em;
+  border: 2px solid #88cf8f;
+  transition: .3s ease;
+}
+.normal label {
+  background: #FFF4DA;
+  border: 0.5px solid rgba(117, 117, 117, 0.31);
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.2), 0 -3px 4px rgba(0, 0, 0, 0.15);
+}
+.normal label:before {
+  border: none;
+  width: 21px;
+  height: 21px;
+  box-shadow: inset 0.5px -2px 2px rgba(255, 255, 255, 0.30);
+  background: #3b3b3b;
+  transform: rotate(-25deg);
+}
+.normal label:after {
+  background: transparent;
+  height: calc(100% + 8px);
+  border-radius: 30px;
+  top: -5px;
+  width: calc(100% + 8px);
+  left: -4px;
+  z-index: 0;
+  box-shadow: inset 0px 2px 4px -2px rgba(0, 0, 0, 0.2), 0px 1px 2px 0px rgba(151, 151, 151, 0.2);
+}
+#normal:checked + label {
+  background: #3b3b3b;
+}
+#normal:checked + label:before {
+  left: 26px;
+  background: #FFF4DA;
+  box-shadow: inset 0.5px -1px 1px rgba(0, 0, 0, 0.40);
+}
+
+/* like */
+section ul{margin-top: -20px; padding-bottom: 30px;}
+section ul li{
+    width: 325px; height: 65px;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 16px;
+    border-radius: 40px;
+}
+section ul li a{
+    font-size: 30px; font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 68px;
+    padding: 14px 30px;
+}
+
+
+
+
+
+
+
+

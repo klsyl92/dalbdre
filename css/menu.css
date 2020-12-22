@@ -1,0 +1,97 @@
+
+header{}
+header nav{}
+header nav ul{
+    display: flex; 
+    border-bottom: 6px solid #5F3926;
+}
+header nav ul li{width: 25%;text-align: center; }
+header nav ul li a{
+    display: block; 
+    font-size: 25px; font-weight: bold; color: #5F3926; cursor: pointer; 
+    padding: 9px; padding-top: 16px;
+}
+header nav ul li:hover{background: #FEC43F;}
+
+/* section */
+section{/*border: 1px solid red;*/}
+section div{text-align: center;}
+section div > a{
+    width: calc(100% - 40px); box-sizing: border-box;
+    padding: 12px; font-size: 16px; font-weight: bold;
+    cursor: pointer; /*float: right;*/ display: block;
+    margin: 0 20px 20px;
+    background-color: #FEC43F; color: #fff;
+    border: 2px solid #FEC43F; border-radius: 8px;} 
+
+/* section > new */
+#new{/*display: none;*/}
+#new ul{}
+#new ul li{margin-top: 13px; position: relative;}
+#new ul li:last-child{margin-bottom: 20px;}
+#new ul li a{}
+#new ul li div{position: absolute; left: 0; top: 280px;}
+#new ul li div span{
+    display: block; 
+    color: #5F3926; font-weight: bold;
+}
+#new ul li div .tit{
+    font-size: 35px; margin-bottom: 16px;
+}
+#new ul li div .text{font-size: 20px; width: 80%; line-height: 1.3; margin: auto;}
+#new ul li a img{}
+
+/* section > coffee */
+#coffee{display: none;}
+#coffee ul{}
+#coffee ul li{margin-top: 13px;}
+#coffee ul li a{display: flex; justify-content: center;}
+#coffee ul li a img{}
+#coffee ul li a div{
+    width: 234px; text-align: left; 
+    margin-left: 8px; margin-top: 10px;
+}
+#coffee ul li a div span{display: block;}
+#coffee ul li a div span.tit{
+    text-align: center;
+    position: relative; right: 180px; top: 95px;
+} 
+#coffee ul li:nth-child(5) a div span.tit{position: relative; top: 85px;}
+#coffee ul li:last-child{margin-bottom: 20px;}
+
+/* section > tea */
+#tea{display: none;}
+#tea ul{}
+#tea ul li{margin-top: 13px;}
+#tea ul li a{display: flex; justify-content: center;}
+#tea ul li a img{}
+#tea ul li a div{
+    width: 234px; text-align: left; 
+    margin-left: 8px; margin-top: 10px;
+}
+#tea ul li a div span{display: block;}
+#tea ul li a div span.tit{
+    text-align: center;
+    position: relative; right: 180px; top: 95px;
+} 
+#tea ul li:last-child{margin-bottom: 20px;}
+
+/* section > fresh */
+#fresh{display: none;}
+#fresh ul{}
+#fresh ul li{margin-top: 13px;}
+#fresh ul li a{display: flex; justify-content: center;}
+#fresh ul li a img{}
+#fresh ul li a div{
+    width: 234px; text-align: left; 
+    margin-left: 8px; margin-top: 10px;
+}
+#fresh ul li a div span{display: block;}
+#fresh ul li a div span.tit{
+    text-align: center;
+    position: relative; right: 180px; top: 95px;
+}
+#fresh ul li:last-child{margin-bottom: 20px;}
+
+
+

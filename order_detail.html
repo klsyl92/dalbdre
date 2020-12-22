@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>달보드레 후 / 오더상세페이지</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order_detail.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/order_detail.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>아메리카노</h1>
+            <button class="more">
+                <img src="images/04_info/icon_more.svg" alt="더보기">
+            </button>
+            <nav>
+                <ul>
+                    <li class="tit">
+                        <a href="#">MENU
+                            <img src="images/04_info/info_logo.png" alt="달보드레후">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="info.html"><span>▶</span>마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="order.html"><span>▶</span>오더페이지</a>
+                    </li>
+                    <li>
+                        <a href="menu.html"><span>▶</span>상세메뉴페이지</a>
+                    </li>
+                </ul>
+                <button class="closeBtn1">
+                    <img src="images/04_info/icon_close.svg" alt="닫기">
+                </button>
+            </nav>
+            <button class="closeBtn2" onclick="history.back()">
+                <img src="images/04_info/icon_close.svg" alt="닫기">
+            </button>
+        </header>
+        <section>
+            <h2 class="hide">본문</h2>
+            <div id="orDetail">
+                <div class="detail_1">
+                    <img src="images/06-2_orDetail/americano.png" alt="아메리카노">
+                    <p>직접 로스팅해서 구운 견과류의 고소한 향과, 깊고 깔끔한 맛을 동시에 즐길 수 있는 커피.</p>
+                </div>
+                <div class="detail_2">
+                    <form action="#">
+                        <button type="button" class="btn01">HOT</button>
+                        <button type="button" class="btn02">ICED</button>
+                        <label for="size">
+                            <select name="size" id="size">
+                                <option value="size" selected>SIZE</option>
+                                <option value="Tall">Tall</option>
+                                <option value="Grande">Grande</option>
+                                <option value="Venti">Venti</option>
+                            </select>
+                        </label>
+                        <label for="topping">
+                            <select name="topping" id="topping">
+                                <option value="topping" selected>추가토핑</option>
+                                <option value="Tall">준비중입니다</option>
+                            </select>
+                        </label>
+                        <div class="count">
+                            <label for="amount">
+                                <input type="text" value="1" id="amount" class="amount" >
+                            </label>
+                            <button class="up">▲</button>
+                            <button class="down">▼</button>
+                        </div>
+                        <div class="total">
+                            <p class="sum" data-v='3000'>3000원</p>
+                        </div>
+                        <button type="button" class="btn03">Take Out</button>
+                        <button type="button" class="btn04">매장</button>
+                        <button type="submit" class="btn05">결제하기</button>
+                    </form>
+                </div>
+            </div> 
+        </section>
+    </div>
+</body>
+</html>

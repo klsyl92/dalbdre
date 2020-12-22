@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>달보드레 후 / 메인</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="hide">메인페이지</h1>
+        </header>
+        <section>
+            <h2 class="hide">본문</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/03_main/slide01.png" alt="slide01">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/03_main/slide02.png" alt="slide02">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/03_main/slide03.png" alt="slide03">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <ul class="mainBtn">
+                <li>
+                    <a href="info.html">
+                        <img src="images/03_main/icon_info.png" alt="마이페이지">
+                    </a>
+                </li>
+                <li>
+                    <a href="order.html">
+                        <img src="images/03_main/icon_order.png" alt="간편오더">
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html">
+                        <img src="images/03_main/icon_menu.png" alt="메뉴">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script>
+		var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+	</script>
+</body>
+</html>

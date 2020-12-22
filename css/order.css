@@ -1,0 +1,82 @@
+* {box-sizing: border-box;}
+#wrap{
+    min-width: 320px; width: 100%; margin: auto;
+    background-color: #FEC43F;
+}
+button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+header{width: 100%; height: 90px; border-bottom: 6px solid #5F3926;}
+header h1{
+    font-size: 40px; font-weight: 700; 
+    letter-spacing: -2px; text-align: center;
+    padding-top: 30px; color: #5F3926
+}
+header .more{
+    /*position: relative;width: 57px; height: 55px;*/
+    position: relative; bottom: 48px; left: 14px;
+}
+header .more img{
+    /*position: absolute; left: 14px; bottom: 6px; width: 57px; height: 55px;*/
+}
+header nav{
+    /*display: none;*/
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+header nav ul{
+    width: 80%; height: 100%;
+    background-color: #FFF4DA;
+}
+header nav ul li{
+    width: 100%; height: 47px; 
+    padding: 10px 22px;
+}
+header nav ul li.tit{padding-bottom: 150px;}
+header nav ul li.tit a{font-size: 35px;}
+header nav ul li a{
+    color: #5F3926; font-size: 24px;
+    padding: 10px; font-weight: 700;
+}
+header nav ul li a span{margin-right: 10px; font-size: 15px; vertical-align: middle;}
+header nav ul li a img{position: relative; right: 10px; top: 15px;}
+header nav .closeBtn1{
+    position: relative; left: 240px; bottom: 798px; 
+    width: 50px; height: 50;
+    background-color: #fff; border-radius: 10px; 
+    padding: 5px; z-index: 20;
+}
+header nav .closeBtn1 img{display: block;}
+header .closeBtn2{
+    /*position: relative;*/
+    position: relative; bottom: 55px; left: 246px;
+}
+header .closeBtn2 img{
+    /*position: absolute; left: 320px; bottom: 193px;*/   
+}
+section{background-color: #fff;}
+section ul{
+    display: flex; flex-wrap: wrap; 
+    justify-content: center; 
+    align-content: center;
+    padding: 10px 6px 36px;
+}
+section ul li{
+    border: 1px solid #5F3926;
+    margin: 5px 0; box-sizing: border-box;
+    border-radius: 5px;
+}
+section ul li:nth-child(odd){margin-right: 5px;}
+
+
+
+
+
+
+
+
+

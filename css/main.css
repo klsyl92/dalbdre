@@ -1,0 +1,20 @@
+.mainBtn{
+    display: flex; justify-content: space-around;
+    margin-top: 45px;
+}
+.mainBtn li{}
+.mainBtn li a{}
+.mainBtn li a img{}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{color: #fff;}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #fff;
+    opacity: 0.8;
+    width: 20px; height: 20px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active{
+    background-color: #5F3926;
+    opacity: 1;
+}
